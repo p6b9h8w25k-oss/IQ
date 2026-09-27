@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#8f0b10">
+  <title>لعبة الذكاء — The IQ Game</title>
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+    <header class="topbar">
+      <div class="brand-mini">
+        <img src="assets/logo.jpg" alt="شعار لعبة الذكاء">
+        <div><strong>لعبة الذكاء</strong><span>THE IQ GAME</span></div>
+      </div>
+      <div class="top-actions">
+        <button id="soundBtn" class="icon-btn skeu-btn" title="الصوت">🔊</button>
+        <button id="resetBtn" class="icon-btn skeu-btn" title="إعادة اللعبة">↻</button>
+      </div>
+    </header>
+
+    <main id="app" class="main">
+      <!-- screens injected by app.js -->
+    </main>
+
+    <footer class="footer">مصمم للعب الجماعي على جوال واحد • 20 فئة • 1800 سؤال</footer>
+  </div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="data/questions.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
